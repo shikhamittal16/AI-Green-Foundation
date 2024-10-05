@@ -6,7 +6,28 @@ export default function Footer() {
             <div className="footer-adv-overlay" style={{margin: "20px"}}>
                 <div className="ast-container">
                     <div className="ast-row" style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
-                        {/* About Section */}
+                        <div
+                            style={{
+                                width: '100px',
+                                height: '100px',
+                                borderRadius: '50%', // Makes the div circular
+                                overflow: 'hidden', // Ensures the image does not exceed the div bounds
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center',
+                                border: '2px solid #ccc', // Optional: Adds a border to the circle
+                            }}
+                        >
+                            <img
+                                src="/AI green Foundation.png"
+                                alt="AI Green Foundation"
+                                style={{
+                                    width: '100%', // Make the image take the full width of the div
+                                    height: '100%', // Make the image take the full height of the div
+                                    objectFit: 'cover', // Ensures the image covers the entire div without distortion
+                                }}
+                            />
+                        </div>
                         <div className="ast-col-lg-3 ast-col-md-6 ast-col-sm-12 footer-adv-widget footer-adv-widget-2" style={{ marginBottom: '20px' }}>
                             <div id="text-2" className="widget widget_text" style={{ textAlign: 'left' }}>
                                 <div className="textwidget">
