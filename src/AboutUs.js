@@ -30,7 +30,7 @@ export default function AboutUs() {
           <div className="about-content">
             <div className="about-text">
               <p className="about-description">
-                Founded to tackle pressing environmental and social issues in Arunachal Pradesh, the AI Green Foundation (AIGF) is a non-profit organization that focuses on sustainable development, environmental protection, and community welfare. Registered under the Ministry of Corporate Affairs (CIN: U88900AR2023NPL013908) and compliant with Section 12A and 80G of the Income Tax Act, the organization has been growing steadily since its inception, making a substantial impact in the field of waste management, river conservation, pollution control, and more.
+                Founded to tackle pressing environmental and social issues in all over India, the AI Green Foundation (AIGF) is a non-profit organization that focuses on sustainable development, environmental protection, and community welfare. Registered under the Ministry of Corporate Affairs (CIN: U88900AR2023NPL013908) and compliant with Section 12A and 80G of the Income Tax Act, the organization has been growing steadily since its inception, making a substantial impact in the field of waste management, river conservation, pollution control, and more.
                 Starting its journey from Roing town in Lower Dibang Valley, AIGF’s foundation was laid with a focus on promoting environmental stewardship through community participation, research, training, and hands-on initiatives.
               </p>
               <p className="about-description">

@@ -19,7 +19,7 @@ export default function Footer() {
                             }}
                         >
                             <img
-                                src="/AI green Foundation.png"
+                                src={`${process.env.PUBLIC_URL}/AI green Foundation.png`}
                                 alt="AI Green Foundation"
                                 style={{
                                     width: '100%', // Make the image take the full width of the div

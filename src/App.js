@@ -1,6 +1,6 @@
 import AboutUs from './AboutUs';
 import './App.css';
-import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {

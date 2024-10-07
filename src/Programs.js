@@ -28,8 +28,8 @@ export default function Programs({ programTitle, programDesc, programBody, image
                         style={{ fontSize: '50px', color: iconColor || '#27ae60' }}
                     >
                         {image === "greenRoingLogo" ? (
-                            <img src="/Green Roing- Logo.png" alt="AI Green Foundation" height={"100px"} width={"100px"} />
-                        ): (
+                            <img src={`${process.env.PUBLIC_URL}/Green Roing- Logo.png`} alt="AI Green Foundation" height="100px" width="100px" />
+                        ) : (
                             <i className={image}></i>
                         )}
                     </div>
@@ -52,7 +52,6 @@ export default function Programs({ programTitle, programDesc, programBody, image
                 </div>
 
                 <a
-                    href="#!"
                     className="btn"
                     onClick={toggleOverlay}
                     style={{
@@ -75,6 +74,7 @@ export default function Programs({ programTitle, programDesc, programBody, image
                     Learn More
                     <i className="fas fa-arrow-right" style={{ marginLeft: '8px' }}></i> {/* Add arrow icon */}
                 </a>
+
             </div>
 
             {showOverlay && (
