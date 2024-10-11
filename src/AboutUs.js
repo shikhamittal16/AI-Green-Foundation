@@ -1,30 +1,19 @@
 import React from "react";
 import Mission from "./Mission";
-import Volunteers from "./Volunteers";
 import Footer from "./Footer";
 import KeyMilestones from "./Keymilestones";
 import Projects from "./Projects";
-// import Footer from "./Footer"; // Uncomment this when Footer is ready
 
 export default function AboutUs() {
   return (
     <div className="about-us-page">
-      {/* Hero Section with Background Image */}
       <div className="hero-section" style={{ backgroundImage: `url('https://img.freepik.com/premium-photo/ngos-spearheading-environmental-sustainability-world-ngo-day_893571-29646.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px 0' }}>
         <div className="hero-content">
           <h1 className="hero-title">AI Green Foundation</h1>
           <p className="hero-description">Supporting green initiatives and innovation</p>
-          {/* <a className="hero-button" href="/our-projects" style={{ marginTop: "30px" }}>
-            <span className="hero-button-icon">
-              <i className="fa fa-hand-o-up" aria-hidden="true"></i>
-            </span>
-            <span className="hero-button-text">View Our Projects</span>
-          </a> */}
         </div>
       </div>
-
-      {/* About Section with Flexbox */}
-      <section className="about-efi-section">
+        <section className="about-efi-section">
         <div className="container">
           <h2 className="section-title">About AI Green Foundation</h2>
           <div className="about-content">
@@ -43,7 +32,6 @@ export default function AboutUs() {
       <KeyMilestones />
       <Mission />
       <Projects/>
-      {/* <Volunteers /> */}
       <Footer />
     </div>
   );
