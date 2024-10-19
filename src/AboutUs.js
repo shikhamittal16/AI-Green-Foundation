@@ -3,19 +3,19 @@ import Mission from "./Mission";
 import Footer from "./Footer";
 import KeyMilestones from "./Keymilestones";
 import Projects from "./Projects";
+import Images from "./Images";
+import GreenRoing from "./GreenRoing";
 
 export default function AboutUs() {
   return (
     <div className="about-us-page">
-      <div className="hero-section" style={{ backgroundImage: `url('https://img.freepik.com/premium-photo/ngos-spearheading-environmental-sustainability-world-ngo-day_893571-29646.jpg')`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px 0' }}>
-        <div className="hero-content">
-          <h1 className="hero-title">AI Green Foundation</h1>
-          <p className="hero-description">Supporting green initiatives and innovation</p>
-        </div>
+      <div className="hero-section"
+           style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/HeaderImage.jpeg)`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px 0' }}>
       </div>
         <section className="about-efi-section">
         <div className="container">
-          <h2 className="section-title">About AI Green Foundation</h2>
+          <h2 className="section-title">AI Green Foundation</h2>
+            <p className="hero-description">Supporting green initiatives and innovation</p>
           <div className="about-content">
             <div className="about-text">
               <p className="about-description">
@@ -28,11 +28,12 @@ export default function AboutUs() {
           </div>
         </div>
       </section>
-
-      <KeyMilestones />
-      <Mission />
-      <Projects/>
-      <Footer />
+        <KeyMilestones />
+        <Images />
+        <Mission />
+        <Projects/>
+        <GreenRoing />
+        <Footer />
     </div>
   );
 }

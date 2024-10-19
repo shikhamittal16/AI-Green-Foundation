@@ -40,16 +40,23 @@
   font-family: 'Arial', sans-serif;
 }
 
-.hero-section {
+.project-section {
   color: #fff;
   text-align: center;
   height: 300px;
+}
+
+.hero-section {
+  color: #fff;
+  text-align: center;
+  height: 360px;
 }
 
 .hero-title {
   font-size: 3rem;
   margin-top: 40px;
   margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .hero-description {
@@ -57,6 +64,7 @@
   margin-bottom: 30px;
   max-width: 800px;
   margin: 0 auto;
+  color: #00796b;
   margin-bottom: 30px;
 }
 
@@ -78,7 +86,7 @@
 .section-title {
   text-align: center;
   font-size: 2.5rem;
-  margin: 50px 0;
+  /*margin: 50px 0;*/
   color: #333;
 }
 
@@ -99,7 +107,6 @@
   font-size: 3rem;
   font-weight: bold;
   color: #00796b;
-  margin-bottom: 50px;
   letter-spacing: 1.5px;
   position: relative;
 }
@@ -138,7 +145,6 @@
 }
 
 .about-text {
-  width: 80%;
   color: #004d40;
 }
 
@@ -444,4 +450,171 @@
       width: 100%; /* For smaller screens, let the card take full width */
       max-width: 500px;
   }
+}
+
+/* NGO Images Section */
+.ngo-images-section {
+  padding: 20px 0;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.ngo-images-grid {
+  display: flex;
+  flex-wrap: nowrap; /* Prevent wrapping */
+  gap: 20px;
+  overflow-x: hidden; /* Enable horizontal scrolling */
+  padding-bottom: 10px;
+  scroll-behavior: smooth; /* Smooth scroll when using arrows */
+  overflow-y: hidden; /* Prevent vertical scrollbar */
+}
+
+.ngo-image {
+  width: 300px;
+  height: 250px;
+  object-fit: contain; /* Ensure the full image is shown */
+  border-radius: 8px;
+  cursor: pointer; /* Make images clickable */
+  transition: transform 0.3s ease;
+}
+
+.ngo-image:hover {
+  transform: scale(1.05);
+}
+
+/* Scroll Arrows */
+.scroll-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  border: none;
+  color:  rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1; /* Make sure the arrows are above other content */
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+/* Modal Styles */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain; /* Maintain aspect ratio of the image */
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Styling for the summary grid */
+.green-roing-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+}
+
+.summary-section {
+  width: 30%;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.summary-section:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 50px;
+  color: #4caf50;
+}
+
+.summary-section h3 {
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.summary-section p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Modal styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.modal-content p {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.modal-content button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.modal-content button:hover {
+  background-color: #388e3c;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
 }

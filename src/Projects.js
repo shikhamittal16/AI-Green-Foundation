@@ -48,7 +48,7 @@ export default function Projects() {
     ];
     return (
         <>
-            <section className="hero-section" style={{ backgroundSize: "cover", padding: "80px 0", textAlign: "center", color: "black" }}>
+            <section className="" style={{ backgroundSize: "cover", marginTop: "30px", textAlign: "center", color: "black" }}>
                 <h1 style={{ fontSize: "3rem", fontWeight: "bold" }}>Our Programs and Initiatives</h1>
                 <p style={{ fontSize: "1.5rem", marginTop: "20px" }}>Creating Impact through Environmental Conservation and Community Welfare</p>
             </section>

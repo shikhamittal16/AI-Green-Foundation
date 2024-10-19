@@ -4,7 +4,7 @@ export default function Mission() {
             <div className="container" style={{ backgroundColor: '#5a900f'}}>
                 <div className="row">
                     <div className="col-12 mb-4">
-                        <h2 style={{ fontSize: '2.5rem', color: '#ffffff', marginBottom: '30px', fontWeight: 'bold' }}>Our Mission & Vision</h2>
+                        <h2 style={{ fontSize: '2.5rem', color: '#ffffff', marginBottom: '30px', fontWeight: 'bold', marginTop: "30px" }}>Our Mission & Vision</h2>
                     </div>
 
                     {/* Mission Card */}
