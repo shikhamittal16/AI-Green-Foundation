@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/AI-Green-Foundation/static/css/main.7e37ce37.css",
+    "main.css": "/AI-Green-Foundation/static/css/main.bf1a5e98.css",
     "main.js": "/AI-Green-Foundation/static/js/main.e7f6161f.js",
     "static/js/787.f2a0fa2f.chunk.js": "/AI-Green-Foundation/static/js/787.f2a0fa2f.chunk.js",
     "static/media/fa-solid-900.ttf": "/AI-Green-Foundation/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
@@ -12,12 +12,12 @@
     "static/media/fa-v4compatibility.ttf": "/AI-Green-Foundation/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/AI-Green-Foundation/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/AI-Green-Foundation/index.html",
-    "main.7e37ce37.css.map": "/AI-Green-Foundation/static/css/main.7e37ce37.css.map",
+    "main.bf1a5e98.css.map": "/AI-Green-Foundation/static/css/main.bf1a5e98.css.map",
     "main.e7f6161f.js.map": "/AI-Green-Foundation/static/js/main.e7f6161f.js.map",
     "787.f2a0fa2f.chunk.js.map": "/AI-Green-Foundation/static/js/787.f2a0fa2f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e37ce37.css",
+    "static/css/main.bf1a5e98.css",
     "static/js/main.e7f6161f.js"
   ]
 }
