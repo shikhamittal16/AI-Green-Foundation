@@ -20,6 +20,7 @@ export default function Programs({ programTitle, programDesc, programBody, image
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
+                    marginBottom: "20px"
                 }}
             >
                 <div>
