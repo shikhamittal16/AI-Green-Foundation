@@ -59,7 +59,7 @@ export default function GreenRoing() {
                     alt="AI Green Foundation"
                     className="green-roing-logo"
                 />
-                <h2 className="title">Green Roing</h2>
+                <h2 className="title">Empowering Change: The Green Roing Initiative</h2>
             </div>
 
             <div className="summary-grid">

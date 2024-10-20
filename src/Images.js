@@ -1,4 +1,4 @@
-import {useState} from "react";
+import { useState } from "react";
 
 export default function Images() {
     const [modalImage, setModalImage] = useState(null);
@@ -20,6 +20,46 @@ export default function Images() {
     const closeModal = () => {
         setModalImage(null);
     };
+
+    // Descriptions for each image
+    const images = [
+        {
+            src: `${process.env.PUBLIC_URL}/image-7.jpeg`,
+            alt: "NGO 1",
+            description: "Made with 10000+ recycled bottles and 1200+ tonnes of scrap irons, “Waste to wonder” art installed at Jawaharlal Nehru Van Udyan (Park)in collaboration with District Administration."
+        },
+        {
+            src: `${process.env.PUBLIC_URL}/image-1.jpeg`,
+            alt: "NGO 2",
+            description: "Tree plantation drive."
+        },
+        // {
+        //     src: `${process.env.PUBLIC_URL}/image-2.jpeg`,
+        //     alt: "NGO 3",
+        //     description: ""
+        // },
+        {
+            src: `${process.env.PUBLIC_URL}/image-3.jpeg`,
+            alt: "NGO 4",
+            description: "Collaboration with NSS, NCC of schools in awareness programs."
+        },
+        // {
+        //     src: `${process.env.PUBLIC_URL}/image-4.jpeg`,
+        //     alt: "NGO 5",
+        //     description: ""
+        // },
+        {
+            src: `${process.env.PUBLIC_URL}/image-8.jpeg`,
+            alt: "NGO 8",
+            description: "Zero waste campaigns in schools Collaboration with School Eco clubs."
+        },
+        {
+            src: `${process.env.PUBLIC_URL}/image-6.jpeg`,
+            alt: "NGO 7",
+            description: "Home made paper making workshop in schools."
+        },
+    ];
+
     return (
         <section className="ngo-images-section">
             <div className="container">
@@ -29,25 +69,29 @@ export default function Images() {
                 <button className="scroll-arrow left-arrow" onClick={() => handleScroll("left")}>&#9664;</button>
 
                 <div className="ngo-images-grid">
-                    <img src={`${process.env.PUBLIC_URL}/image-1.jpeg`} alt="NGO 1" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-1.jpeg`)} />
-                    <img src={`${process.env.PUBLIC_URL}/image-2.jpeg`} alt="NGO 2" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-2.jpeg`)} />
-                    <img src={`${process.env.PUBLIC_URL}/image-3.jpeg`} alt="NGO 3" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-3.jpeg`)} />
-                    <img src={`${process.env.PUBLIC_URL}/image-4.jpeg`} alt="NGO 4" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-4.jpeg`)} />
-                    <img src={`${process.env.PUBLIC_URL}/image-5.jpeg`} alt="NGO 5" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-5.jpeg`)} />
-                    <img src={`${process.env.PUBLIC_URL}/image-6.jpeg`} alt="NGO 5" className="ngo-image" onClick={() => handleImageClick(`${process.env.PUBLIC_URL}/image-6.jpeg`)} />
+                    {images.map((image, index) => (
+                        <div key={index} className="ngo-image-container">
+                            <img
+                                src={image.src}
+                                alt={image.alt}
+                                className="ngo-image"
+                                onClick={() => handleImageClick(image.src)}
+                            />
+                            <p className="ngo-image-description">{image.description}</p>
+                        </div>
+                    ))}
                 </div>
 
                 {/* Right Arrow */}
                 <button className="scroll-arrow right-arrow" onClick={() => handleScroll("right")}>&#9654;</button>
             </div>
 
-    {modalImage && (
-        <div className="modal" onClick={closeModal}>
-            <span className="close">&times;</span>
-            <img className="modal-content" src={modalImage} alt="Enlarged NGO" />
-        </div>
-    )}
+            {modalImage && (
+                <div className="modal" onClick={closeModal}>
+                    <span className="close">&times;</span>
+                    <img className="modal-content" src={modalImage} alt="Enlarged NGO" />
+                </div>
+            )}
         </section>
-
-    )
+    );
 }
