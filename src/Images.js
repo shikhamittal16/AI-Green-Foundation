@@ -41,7 +41,7 @@ export default function Images() {
         {
             src: `${process.env.PUBLIC_URL}/image-3.jpeg`,
             alt: "NGO 4",
-            description: "Collaboration with NSS, NCC of schools in awareness programs."
+            description: "Material Recovery Facility (MRF) installation at Mayu, Roing."
         },
         // {
         //     src: `${process.env.PUBLIC_URL}/image-4.jpeg`,

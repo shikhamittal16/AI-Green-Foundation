@@ -71,7 +71,7 @@ export default function Mission() {
                     <p>
                         "Innovation and green initiatives are the seeds of a thriving, sustainable future"
                     </p>
-                    <cite style={{ display: 'block', marginTop: '20px', fontSize: '1.2rem', fontWeight: 'bold' }}>Ibi Mepo, AIGF</cite>
+                    <cite style={{ display: 'block', marginTop: '20px', fontSize: '1.2rem', fontWeight: 'bold' }}>Ibi Mepo, Director(AIGF)</cite>
                 </blockquote>
             </div>
         </section>
